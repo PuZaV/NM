@@ -6,15 +6,12 @@
 void main()
 {
 	float x0, x1, x2, f0, f1, f2, e;
-	int step = 1, N;
+	int step = 1;
 	/* Inputs */
 	printf("\nEnter initial guesses:\n");
 	scanf("%f%f", &x0, &x1);
 	printf("Enter tolerable error:\n");
 	scanf("%f", &e);
-	printf("Enter maximum iteration:\n");
-	scanf("%d", &N);
-
 	/* Implementing Secant Method */
 	printf("\nStep\t\tx0\t\tx1\t\tx2\t\tf(x2)\n");
 	do
