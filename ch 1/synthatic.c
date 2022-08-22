@@ -5,7 +5,6 @@
 void main()
 {
     int poly[6], m, r, i, q[6];
-    printf("\t\tSYNTHETIC DIVISION");
     printf("\n Enter the highest degree of the equation (max 5): ");
     scanf("%d", &m);
 

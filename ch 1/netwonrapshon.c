@@ -2,11 +2,9 @@
 #include <conio.h>
 #include <math.h>
 #include <stdlib.h>
-/* Defining equation to be solved.
-   Change this equation to solve another problem. */
+//Defining equation to be solved.
 #define f(x) x *x - 3 * x + 2
-/* Defining derivative of g(x).
-   As you change f(x), change this function also. */
+// Defining derivative of f(x).
 #define g(x) 2 * x - 3
 void main()
 {
@@ -28,16 +26,11 @@ void main()
 			printf("Mathematical Error.");
 			exit(0);
 		}
-
 		x1 = x0 - f0 / g0;
-
 		printf("%d\t\t%f\t%f\t%f\t%f\n", step, x0, f0, x1, f1);
 		x0 = x1;
-
 		step = step + 1;
-
 		f1 = f(x1);
-
 	} while (fabs(f1) > e);
 
 	printf("\nRoot is: %f", x1);

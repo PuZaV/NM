@@ -6,7 +6,7 @@
 void main()
 {
 	float x0, x1, x2, f0, f1, f2, e;
-	int step = 1;
+	int step = 1, N;
 	/* Inputs */
 	printf("\nEnter initial guesses:\n");
 	scanf("%f%f", &x0, &x1);
@@ -23,17 +23,13 @@ void main()
 			printf("Mathematical Error.");
 			exit(0);
 		}
-
 		x2 = x1 - (x1 - x0) * f1 / (f1 - f0);
 		f2 = f(x2);
-
 		printf("%d\t\t%f\t%f\t%f\t%f\n", step, x0, x1, x2, f2);
-
 		x0 = x1;
 		f0 = f1;
 		x1 = x2;
 		f1 = f2;
-
 		step = step + 1;
 	} while (fabs(f2) > e);
 	printf("\nRoot is: %f", x2);

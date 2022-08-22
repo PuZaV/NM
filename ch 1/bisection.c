@@ -9,16 +9,11 @@ void main()
 {
 	float x0, x1, x2, f0, f1, f2, e;
 	int step = 1;
-/* Inputs */
 up:
 	printf("\nEnter two initial guesses:\n");
 	scanf("%f%f", &x1, &x2);
-	//	printf("Enter tolerable error:\n");
-	//	scanf("%f", &e);
-	/* Calculating Functional Value */
 	f1 = f(x1);
 	f2 = f(x2);
-	/* Checking whether given guesses brackets the root or not. */
 	if (f1 * f2 > 0.0)
 	{
 		printf("Incorrect Initial Guesses.\n");
